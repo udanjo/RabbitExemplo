@@ -1,11 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30002.166
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rabbit.Consumer", "Rabbit.Consumer\Rabbit.Consumer.csproj", "{4C33B542-958D-46A8-BF3F-08CCD3688490}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rabbit.Publish", "Rabbit.Publish\Rabbit.Publish.csproj", "{A4D64A0A-119E-4C0A-8283-5BB6CD41A38B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rabbit.Publish", "Rabbit.Publish\Rabbit.Publish.csproj", "{A4D64A0A-119E-4C0A-8283-5BB6CD41A38B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitMq", "RabbitMq", "{68E84F12-D8BD-4EFA-A519-A7788A2E0E80}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MassTransit", "MassTransit", "{7739B3DE-B3D6-4D5A-9156-ACA6DBD8F060}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransit.Api", "MassTransit.Api\MassTransit.Api.csproj", "{CC96A85F-45A6-403E-8676-25D756E1CBBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +27,18 @@ Global
 		{A4D64A0A-119E-4C0A-8283-5BB6CD41A38B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4D64A0A-119E-4C0A-8283-5BB6CD41A38B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4D64A0A-119E-4C0A-8283-5BB6CD41A38B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC96A85F-45A6-403E-8676-25D756E1CBBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC96A85F-45A6-403E-8676-25D756E1CBBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC96A85F-45A6-403E-8676-25D756E1CBBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC96A85F-45A6-403E-8676-25D756E1CBBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4C33B542-958D-46A8-BF3F-08CCD3688490} = {68E84F12-D8BD-4EFA-A519-A7788A2E0E80}
+		{A4D64A0A-119E-4C0A-8283-5BB6CD41A38B} = {68E84F12-D8BD-4EFA-A519-A7788A2E0E80}
+		{CC96A85F-45A6-403E-8676-25D756E1CBBB} = {7739B3DE-B3D6-4D5A-9156-ACA6DBD8F060}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {48D624A0-94F9-4891-8DAE-D7F22D0DF3E0}
